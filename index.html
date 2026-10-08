@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eryna Salon 2 Dinoyo | Salon Rambut Malang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-pearl: #FCF9F8;
+      --color-plum: #2A1730;
+      --color-blush: #F4DCE0;
+      --color-mauve: #8E5A7E;
+      --color-gold: #B88A4A;
+      --color-cardBorder: #EADBDF;
+      --color-secondaryText: #6D5A72;
+      --font-serif: "Cormorant Garamond", serif;
+      --font-sans: "DM Sans", sans-serif;
+    }
+  </style>
+  <style>
+    body {
+      background-color: #FCF9F8;
+      color: #2A1730;
+      font-family: 'DM Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .headline-serif {
+      font-family: 'Cormorant Garamond', serif;
+      line-height: 1.1;
+    }
+    .chip.active {
+      background-color: #2A1730;
+      color: #FCF9F8;
+      border-color: #2A1730;
+    }
+    .chip.active svg {
+      stroke: #FCF9F8;
+    }
+    .safe-bottom {
+      padding-bottom: calc(env(safe-area-inset-bottom, 16px) + 72px);
+    }
+  </style>
+</head>
+<body class="bg-pearl text-plum min-h-screen relative flex justify-center selection:bg-blush selection:text-plum">
+  <!-- Container max 430px for true mobile-first feel on all screens -->
+  <div class="w-full max-w-[430px] min-h-screen bg-pearl flex flex-col relative shadow-2xl safe-bottom border-x border-[#f0e6e8]">
+    
+    <!-- 1. TOP NAV -->
+    <header class="sticky top-0 z-40 bg-pearl/90 backdrop-blur-md px-5 py-3.5 flex items-center justify-between border-b border-cardBorder/60 transition-all">
+      <div class="flex flex-col">
+        <span class="font-serif text-2xl font-bold tracking-tight text-plum leading-none">Eryna Salon</span>
+        <span class="text-[11px] font-medium text-secondaryText tracking-wide">Dinoyo, Malang</span>
+      </div>
+      <a href="https://wa.me/6283834782003?text=Halo%20Eryna%20Salon,%20saya%20mau%20konsultasi%20jadwal" target="_blank" rel="noopener noreferrer" class="h-10 px-4 rounded-full border border-mauve text-mauve hover:bg-blush/40 transition-colors flex items-center gap-2 text-sm font-semibold active:scale-95">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <span>Chat WhatsApp</span>
+      </a>
+    </header>
+
+    <main class="px-5 space-y-12 pt-5">
+      
+      <!-- 2. HERO SECTION -->
+      <section class="space-y-4">
+        <div class="space-y-3">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blush/60 text-secondaryText text-xs font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Buka setiap hari · Dinoyo
+          </div>
+          <h1 class="headline-serif text-[42px] font-semibold text-plum tracking-tight leading-[1.08]">
+            Rambut rapi, tanpa tebak-tebakan.
+          </h1>
+          <p class="text-[15px] leading-relaxed text-secondaryText font-normal">
+            Salon di Dinoyo, Malang. Pilih layanan, kirim ke WhatsApp, dan tim kami konfirmasi jadwalmu.
+          </p>
+          
+          <!-- Rating Row -->
+          <div class="inline-flex items-center gap-2 pt-1 pb-1">
+            <div class="flex items-center text-gold">
+              <svg class="w-4 h-4 fill-gold text-gold" viewBox="0 0 24 24">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium text-plum">
+              <strong class="font-bold">4,5 dari 5</strong> · 125 ulasan Google
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero Photo -->
+        <div class="relative w-full aspect-[4/5] rounded-[28px] overflow-hidden shadow-md group">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzHXg2Ax6FV4Y259ntO4GaHJIEkw1JGV_xDqgfW0WEbXHpHP9_hyfmn6gsex-vpKc3bqS710QDnItw8jh5sG7VTod_VXh5Q9epepsV-bg2nJS6dfiCFj_jh8FF0ornuiC3B0PnZpRwleT4BOYmozLdV4HT7abunTbHgxDbb_2O-q94FLx1fF0TTMzvIpYmBmMn6p-sCaWGpQ1knyZjUNrhvtNizgiRlsYjX1ikgeiF" alt="Hair stylist blow-drying customer hair at Eryna Salon Dinoyo" class="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-plum/60 via-plum/10 to-transparent pointer-events-none"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-pearl flex items-center justify-between">
+            <span class="text-xs bg-plum/70 backdrop-blur-md px-3 py-1.5 rounded-full border border-pearl/20 font-medium">
+              Eryna Salon 2 Dinoyo
+            </span>
+            <span class="text-xs bg-pearl/90 text-plum font-semibold px-2.5 py-1 rounded-full shadow-sm">
+              Free Wi-Fi
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. SERVICE PICKER CARD -->
+      <section class="bg-blush rounded-[22px] p-5 space-y-4 shadow-sm border border-cardBorder">
+        <div class="space-y-1">
+          <h2 class="font-serif text-2xl font-bold text-plum">Mau perawatan apa?</h2>
+          <p class="text-xs text-secondaryText leading-relaxed">
+            Pilih satu atau lebih, pesannya tersusun otomatis.
+          </p>
+        </div>
+
+        <!-- Selectable Chips -->
+        <div class="grid grid-cols-2 gap-2.5" id="chips-container">
+          <!-- Chip 1 -->
+          <button type="button" onclick="toggleChip(this, 'Potong & Styling')" class="chip active h-12 px-3.5 rounded-full border border-cardBorder bg-white text-plum flex items-center gap-2.5 text-sm font-medium transition-all active:scale-95 text-left">
+            <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+              <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+              <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+            </svg>
+            <span class="truncate">Potong & styling</span>
+          </button>
+
+          <!-- Chip 2 -->
+          <button type="button" onclick="toggleChip(this, 'Pewarnaan')" class="chip h-12 px-3.5 rounded-full border border-cardBorder bg-white text-plum flex items-center gap-2.5 text-sm font-medium transition-all active:scale-95 text-left">
+            <svg class="w-4 h-4 flex-shrink-0 text-mauve" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+            </svg>
+            <span class="truncate">Pewarnaan</span>
+          </button>
+
+          <!-- Chip 3 -->
+          <button type="button" onclick="toggleChip(this, 'Smoothing')" class="chip active h-12 px-3.5 rounded-full border border-cardBorder bg-white text-plum flex items-center gap-2.5 text-sm font-medium transition-all active:scale-95 text-left">
+            <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+            </svg>
+            <span class="truncate">Smoothing</span>
+          </button>
+
+          <!-- Chip 4 -->
+          <button type="button" onclick="toggleChip(this, 'Creambath')" class="chip h-12 px-3.5 rounded-full border border-cardBorder bg-white text-plum flex items-center gap-2.5 text-sm font-medium transition-all active:scale-95 text-left">
+            <svg class="w-4 h-4 flex-shrink-0 text-mauve" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+            </svg>
+            <span class="truncate">Creambath</span>
+          </button>
+        </div>
+
+        <!-- WhatsApp CTA -->
+        <a id="service-wa-btn" href="https://wa.me/6283834782003?text=Halo%20Eryna%20Salon,%20saya%20tertarik%20booking%20layanan:%20Potong%20&%20styling,%20Smoothing" target="_blank" rel="noopener noreferrer" class="w-full h-12 rounded-xl bg-plum text-pearl font-bold text-base flex items-center justify-center gap-2.5 shadow-md hover:bg-plum/90 active:scale-[0.98] transition-all">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/>
+          </svg>
+          <span>Kirim ke WhatsApp</span>
+        </a>
+      </section>
+
+      <!-- 4. LAYANAN SECTION -->
+      <section class="space-y-3.5">
+        <div class="flex items-baseline justify-between">
+          <h2 class="font-serif text-[28px] font-bold text-plum leading-tight">Layanan Unggulan</h2>
+        </div>
+
+        <div class="space-y-2.5">
+          <!-- Card 1 -->
+          <a href="https://wa.me/6283834782003?text=Halo%20Eryna%20Salon,%20tanya%20info%20Penataan%20Rambut" class="block p-4 rounded-[14px] bg-white border border-cardBorder shadow-sm hover:border-mauve transition-all group">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-blush/60 flex items-center justify-center text-plum group-hover:bg-plum group-hover:text-pearl transition-colors">
+                  <svg class="w-5 h-5 stroke-[1.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                    <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                    <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-base font-semibold text-plum">Penataan rambut</h3>
+                  <p class="text-xs text-secondaryText">Potong, blow, styling sesuai bentuk wajah</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 text-mauve/70 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Card 2 -->
+          <a href="https://wa.me/6283834782003?text=Halo%20Eryna%20Salon,%20tanya%20info%20Smoothing" class="block p-4 rounded-[14px] bg-white border border-cardBorder shadow-sm hover:border-mauve transition-all group">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-blush/60 flex items-center justify-center text-plum group-hover:bg-plum group-hover:text-pearl transition-colors">
+                  <svg class="w-5 h-5 stroke-[1.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-base font-semibold text-plum">Smoothing</h3>
+                  <p class="text-xs text-secondaryText">Rambut lebih lurus dan mudah diatur alami</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 text-mauve/70 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="https://wa.me/6283834782003?text=Halo%20Eryna%20Salon,%20minta%20pricelist%20layanan%20lengkap" class="block p-4 rounded-[14px] bg-white border border-cardBorder shadow-sm hover:border-mauve transition-all group">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-blush/60 flex items-center justify-center text-plum group-hover:bg-plum group-hover:text-pearl transition-colors">
+                  <svg class="w-5 h-5 stroke-[1.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-base font-semibold text-plum">Layanan lainnya</h3>
+                  <p class="text-xs text-secondaryText">Daftar lengkap creambath, pewarnaan & harga</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 text-mauve/70 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 5. HASIL KERJA (GALLERY) -->
+      <section class="space-y-3.5">
+        <div class="flex items-baseline justify-between">
+          <h2 class="font-serif text-[28px] font-bold text-plum leading-tight">Hasil Kerja</h2>
+          <span class="text-xs text-secondaryText">Contoh foto</span>
+        </div>
+
+        <!-- Asymmetric Grid: 1 large tile + 2 smaller tiles -->
+        <div class="grid grid-cols-2 gap-2.5">
+          <!-- Large Tile (spans 2 cols) -->
+          <div class="col-span-2 relative h-56 rounded-[14px] overflow-hidden group shadow-sm">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuABqkZOiAUD73kQ-mb_14H9yXVSEiGBYcoBY4jQVUqrLlGy2FDA5i5uXCbkTSTD0r2MneG8_c66aLBrXiG5-B3rv0ttBxar6kRUMCXmYxBsPD-uYtDp4nIDE9ZMZyZ3r5un6LwcDwmRYhi9zT6vUUdR9HO9DWFPmEnss6p0G-WayquvA4XFqEuML4Rpw7AC7MbCA3JYe3sjh-O7okLjD_NIIRSsW5YUp-Yes-wLJKGe" alt="Hasil smoothing glossy straight hair" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-plum/50 to-transparent"></div>
+            <div class="absolute top-3 left-3 bg-plum/80 backdrop-blur-sm text-pearl text-[11px] font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Contoh
+            </div>
+            <div class="absolute bottom-3 left-3 text-pearl text-xs font-medium">
+              Silk Smoothing · Kilau Sehat Alami
+            </div>
+          </div>
+
+          <!-- Small Tile 1 -->
+          <div class="relative h-44 rounded-[14px] overflow-hidden group shadow-sm">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHYjJ5J5gITF7pwGGSv7lXSLtfKgCUTzeAyCvKASo4FgL_kfJjKracJBBWCl3Cch9r_TB-AFpFLleJvQZtCB3cU_g0M9eNVhgQnv9P4Uxdq80npGihsfesz1P64WFSfqbWmYFcSKdR_lDfbv-HtiT_AHHylqJg7vy2DjSOwmHrhFCPVmBanT_tAFmsnxMx7XfNyAP5UYCGKQlnUY-Q5bMqN-WDHVIQbmNcWarETHPz" alt="Layered haircut textured waves" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-plum/40 to-transparent"></div>
+            <div class="absolute top-2.5 left-2.5 bg-mauve/80 backdrop-blur-sm text-pearl text-[10px] font-semibold px-2 py-0.5 rounded-full uppercase tracking-wide">
+              Contoh
+            </div>
+            <div class="absolute bottom-2 left-2.5 text-pearl text-[11px] font-medium leading-tight">
+              Korean Layered Cut
+            </div>
+          </div>
+
+          <!-- Small Tile 2 -->
+          <div class="relative h-44 rounded-[14px] overflow-hidden group shadow-sm">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYx82gvQyCncjGMhwfrdiJ7vU9_-9h8O9kbf-P4mkkVXn6JACm6eEQjQdvK2247ATRc7rPIVqb1rgqo4HuYCTxKtCtVl18IeVsUuE7229rRtpC2Op-4bAIzPJWIQwv6Of_dX_Ew6o7aFnQi3h-4OeBBY-2XD_AY6QkLpANhQ4KtkvVqt84hTREN1YtMBzsxwJMum-hqQD3KU002TLbOQn1N59Kv9t3ULk-b91ckK_U" alt="Rich chestnut hair color texture" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-plum/40 to-transparent"></div>
+            <div class="absolute top-2.5 left-2.5 bg-secondaryText/80 backdrop-blur-sm text-pearl text-[10px] font-semibold px-2 py-0.5 rounded-full uppercase tracking-wide">
+              Contoh
+            </div>
+            <div class="absolute bottom-2 left-2.5 text-pearl text-[11px] font-medium leading-tight">
+              Chestnut Brown Balayage
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. KATA PELANGGAN -->
+      <section class="space-y-3.5">
+        <h2 class="font-serif text-[28px] font-bold text-plum leading-tight">Kata Pelanggan</h2>
+        
+        <div class="p-6 rounded-[20px] bg-white border border-cardBorder shadow-sm space-y-4">
+          <!-- 5 Stars -->
+          <div class="flex items-center gap-1 text-gold">
+            <svg class="w-4 h-4 fill-gold" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 fill-gold" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 fill-gold" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 fill-gold" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="w-4 h-4 fill-gold" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+
+          <!-- Quote in Cormorant Garamond -->
+          <blockquote class="font-serif italic text-2xl text-plum leading-snug">
+            “Pelayanan ramah, hasilnya rapi, salonnya bersih dan nyaman.”
+          </blockquote>
+
+          <div class="flex items-center justify-between pt-1 border-t border-cardBorder/60">
+            <div>
+              <p class="text-sm font-bold text-plum">Nama pelanggan</p>
+              <p class="text-xs text-secondaryText">Contoh testimoni, ganti dengan ulasan asli</p>
+            </div>
+            
+            <!-- 3 Dots Swipe Indicator -->
+            <div class="flex items-center gap-1.5">
+              <span class="w-5 h-1.5 rounded-full bg-plum"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-cardBorder"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-cardBorder"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. JAM BUKA & LOKASI -->
+      <section class="space-y-4">
+        <h2 class="font-serif text-[28px] font-bold text-plum leading-tight">Jam Buka & Lokasi</h2>
+
+        <!-- Hours Table -->
+        <div class="bg-white rounded-[16px] border border-cardBorder p-4 shadow-sm divide-y divide-cardBorder/60">
+          <div class="flex items-center justify-between py-2.5">
+            <span class="text-sm font-medium text-plum">Senin – Jumat</span>
+            <span class="text-sm font-semibold text-plum">08.00 – 19.00 WIB</span>
+          </div>
+          <div class="flex items-center justify-between py-2.5">
+            <span class="text-sm font-medium text-plum">Sabtu</span>
+            <span class="text-sm font-semibold text-plum">09.00 – 19.00 WIB</span>
+          </div>
+          <div class="flex items-center justify-between py-2.5">
+            <span class="text-sm font-medium text-plum">Minggu</span>
+            <span class="text-sm font-semibold text-plum">08.00 – 19.00 WIB</span>
+          </div>
+        </div>
+
+        <!-- Address and Map Card -->
+        <div class="bg-white rounded-[16px] border border-cardBorder p-4 shadow-sm space-y-4">
+          <div class="flex gap-3">
+            <div class="w-9 h-9 rounded-full bg-blush flex items-center justify-center text-plum shrink-0 mt-0.5">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="space-y-1">
+              <h4 class="text-sm font-bold text-plum">Eryna Salon 2 Dinoyo</h4>
+              <p class="text-xs text-secondaryText leading-relaxed">
+                Jl. MT. Haryono No.167, Dinoyo, Lowokwaru, Kota Malang 65144
+              </p>
+            </div>
+          </div>
+
+          <!-- Stylized Map Illustration Preview -->
+          <div class="relative w-full h-32 rounded-xl bg-[#F0E6E7] overflow-hidden border border-cardBorder flex items-center justify-center">
+            <!-- SVG Map roads abstraction -->
+            <svg class="absolute inset-0 w-full h-full opacity-40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M-20 40 Q 100 80, 220 30 T 450 60" stroke="#8E5A7E" stroke-width="6" fill="none"/>
+              <path d="M60 -10 L 140 140" stroke="#FFFFFF" stroke-width="10" fill="none"/>
+              <path d="M220 -10 L 210 140" stroke="#FFFFFF" stroke-width="8" fill="none"/>
+              <path d="M0 90 L 450 90" stroke="#FFFFFF" stroke-width="12" fill="none"/>
+            </svg>
+            <!-- Pin -->
+            <div class="relative z-10 flex flex-col items-center">
+              <div class="w-9 h-9 rounded-full bg-plum text-pearl flex items-center justify-center shadow-lg border-2 border-white animate-bounce">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <span class="text-[11px] font-bold bg-white/95 text-plum px-2.5 py-0.5 rounded-full shadow-sm mt-1 border border-cardBorder">
+                Eryna Salon 2
+              </span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="grid grid-cols-1 gap-2 pt-1">
+            <a href="https://wa.me/6283834782003?text=Halo%20Eryna%20Salon,%20saya%20mau%20booking%20jadwal" class="h-11 rounded-xl bg-plum text-pearl font-bold text-sm flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg>
+              <span>Booking via WhatsApp</span>
+            </a>
+            
+            <a href="https://maps.google.com/?q=Jl.+MT.+Haryono+No.167,+Dinoyo,+Lowokwaru,+Kota+Malang" target="_blank" rel="noopener noreferrer" class="h-11 rounded-xl border border-mauve text-mauve font-semibold text-sm flex items-center justify-center gap-2 hover:bg-blush/30 active:scale-95 transition-all">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                <line x1="9" y1="3" x2="9" y2="18"></line>
+                <line x1="15" y1="6" x2="15" y2="21"></line>
+              </svg>
+              <span>Buka rute di Maps</span>
+            </a>
+          </div>
+
+          <!-- Row of tiny amenity icons -->
+          <div class="pt-3 border-t border-cardBorder flex items-center justify-around text-xs text-secondaryText">
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-mauve stroke-[1.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
+              <span>Free Wi-Fi</span>
+            </div>
+            <div class="w-1 h-1 rounded-full bg-cardBorder"></div>
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-mauve stroke-[1.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                <line x1="1" y1="10" x2="23" y2="10"></line>
+              </svg>
+              <span>Debit Card</span>
+            </div>
+            <div class="w-1 h-1 rounded-full bg-cardBorder"></div>
+            <div class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-mauve stroke-[1.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 21v-4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Toilet</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer class="mt-12 bg-plum text-pearl px-5 py-8 space-y-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="font-serif text-xl font-bold tracking-tight">Eryna Salon 2 Dinoyo</h3>
+          <p class="text-xs text-pearl/70">Salon rambut di Dinoyo, Malang</p>
+        </div>
+      </div>
+
+      <div class="pt-3 border-t border-pearl/15 flex flex-col gap-2 text-xs text-pearl/80">
+        <div class="flex items-center gap-4">
+          <a href="https://wa.me/6283834782003" target="_blank" class="hover:text-pearl flex items-center gap-1.5 underline underline-offset-2">
+            WhatsApp Kami
+          </a>
+          
+        </div>
+        <p class="text-[11px] text-pearl/50 pt-1">
+          Mockup contoh oleh Ryo Digital · <a href="https://wa.me/6285648983077" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2">WhatsApp 0856 4898 3077</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- STICKY BOTTOM BAR -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 flex justify-center pointer-events-none">
+      <div class="w-full max-w-[430px] p-3 px-5 bg-pearl/95 backdrop-blur-md border-t border-cardBorder shadow-[0_-8px_20px_rgba(42,23,48,0.08)] pointer-events-auto">
+        <a id="sticky-wa-btn" href="https://wa.me/6283834782003?text=Halo%20Eryna%20Salon,%20saya%20mau%20booking%20via%20WhatsApp" target="_blank" rel="noopener noreferrer" class="w-full h-12 rounded-full bg-plum text-pearl font-bold text-base flex items-center justify-center gap-2.5 shadow-md hover:bg-plum/90 active:scale-[0.98] transition-transform">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/>
+          </svg>
+          <span>Booking via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Interactive script for Service Picker -->
+  <script>
+    let selectedServices = new Set(['Potong & Styling', 'Smoothing']);
+
+    function toggleChip(button, serviceName) {
+      if (selectedServices.has(serviceName)) {
+        selectedServices.delete(serviceName);
+        button.classList.remove('active');
+      } else {
+        selectedServices.add(serviceName);
+        button.classList.add('active');
+      }
+      updateWhatsAppLinks();
+    }
+
+    function updateWhatsAppLinks() {
+      const waBtn = document.getElementById('service-wa-btn');
+      const stickyBtn = document.getElementById('sticky-wa-btn');
+      const servicesList = Array.from(selectedServices);
+      
+      let messageText = 'Halo Eryna Salon, saya mau konsultasi dan booking jadwal.';
+      if (servicesList.length > 0) {
+        messageText = `Halo Eryna Salon, saya mau booking layanan: ${servicesList.join(', ')}. Apakah ada slot kosong?`;
+      }
+      
+      const encodedMsg = encodeURIComponent(messageText);
+      const url = `https://wa.me/6283834782003?text=${encodedMsg}`;
+      
+      if (waBtn) waBtn.href = url;
+      if (stickyBtn) stickyBtn.href = url;
+    }
+  </script>
+</body>
+</html>
