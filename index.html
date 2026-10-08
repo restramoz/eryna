@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eryna Salon 2 Dinoyo | Salon Rambut Malang</title>
+<meta name="description" content="Eryna Salon 2 Dinoyo, salon rambut di Malang. Pilih layanan dan booking melalui WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FCF8F6;--cream-2:#F7EFEC;--plum:#2A1730;--plum-2:#3B2442;--blush:#F2DCE0;--rose:#D6A9B5;--mauve:#94627F;--mauve-t:#7A4B67;--gold:#B58A55;--gold-soft:#D9C09A;--muted:#6F616F;--line:#E8DADD}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--plum);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6;font-size:16px;padding-bottom:calc(72px + env(safe-area-inset-bottom,0px));overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font-family:inherit}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.05}
+svg{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--mauve);outline-offset:3px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--mauve-t);font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow::before,.eyebrow::after{content:"";width:22px;height:1px;background:var(--gold)}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(252,248,246,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .wrap{min-height:68px;display:flex;justify-content:space-between;align-items:center}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:1.65rem;font-weight:600}
+.brand span{margin-top:5px;font-size:.66rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.btn{min-height:48px;padding:0 21px;border-radius:999px;display:inline-flex;justify-content:center;align-items:center;gap:9px;border:1px solid var(--plum);background:var(--plum);color:var(--cream);font-size:.94rem;font-weight:700;text-decoration:none;cursor:pointer;transition:.25s ease}
+.btn:hover{transform:translateY(-2px);background:var(--plum-2)}
+.btn.ghost{background:transparent;color:var(--plum)}
+.btn.ghost:hover{background:var(--blush)}
+.btn.sm{min-height:40px;padding:0 15px;font-size:.85rem}
+/* hero */
+.hero{position:relative;padding:38px 0 50px;margin-bottom:0;display:grid;gap:34px}
+.hero-copy{position:relative;z-index:2}
+.hero h1{font-size:clamp(3rem,13.5vw,5.5rem);letter-spacing:-.04em;margin:16px 0 18px;max-width:650px}
+.hero h1 em{color:var(--mauve-t);font-weight:500}
+.hero-desc{color:var(--muted);max-width:470px;margin:0}
+.hero-rating{display:flex;align-items:center;gap:10px;margin-top:20px;font-size:.9rem}
+.stars{color:var(--gold);letter-spacing:2px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+.hero-photo{position:relative;z-index:1;max-width:430px;margin:0 auto;width:100%}
+.hero-frame{position:relative;aspect-ratio:4/5;border-radius:48% 48% 20px 20px;overflow:hidden;background:var(--blush);border:7px solid rgba(255,255,255,.75);box-shadow:0 20px 55px rgba(42,23,48,.12)}
+.hero-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 55%,rgba(42,23,48,.25))}
+.photo-note{position:absolute;z-index:4;left:-6px;bottom:25px;background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:16px;padding:12px 15px;box-shadow:0 12px 30px rgba(42,23,48,.1)}
+.photo-note strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.3rem;line-height:1}
+.photo-note span{font-size:.72rem;color:var(--muted)}
+.rating-bubble{position:absolute;z-index:5;top:25px;right:-6px;width:78px;height:78px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--plum);color:var(--cream);box-shadow:0 12px 25px rgba(42,23,48,.16)}
+.rating-bubble strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.5rem;line-height:1}
+.rating-bubble span{display:block;color:var(--gold-soft);font-size:.6rem}
+.flower{position:absolute;pointer-events:none;opacity:.4;color:var(--rose);width:100px;height:100px;right:-10px;top:24px;z-index:0}
+.flower svg{width:100%;height:100%}
+/* booking */
+.booking{position:relative;overflow:hidden;background:var(--blush);border-radius:28px;padding:28px 22px;margin-bottom:70px;border:1px solid rgba(214,169,181,.4)}
+.booking::before{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(148,98,127,.16);border-radius:50%;right:-90px;top:-90px}
+.booking-head,.chips,.booking-submit{position:relative;z-index:2}
+.booking h2{font-size:2.25rem;margin:7px 0 4px}
+.booking p{color:var(--muted);font-size:.9rem;margin-bottom:20px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.chip{min-height:64px;border:1px solid rgba(42,23,48,.1);background:rgba(255,255,255,.75);color:var(--plum);border-radius:16px;padding:10px 13px;display:flex;align-items:center;gap:10px;font-size:.88rem;font-weight:600;text-align:left;cursor:pointer;transition:.2s ease}
+.chip svg{color:var(--mauve);width:22px;height:22px}
+.chip small{display:block;color:var(--muted);font-size:.68rem;font-weight:400}
+.chip[aria-pressed="true"]{background:var(--plum);border-color:var(--plum);color:#fff}
+.chip[aria-pressed="true"] svg{color:var(--gold-soft)}
+.chip[aria-pressed="true"] small{color:rgba(255,255,255,.7)}
+.booking-submit{margin-top:12px}
+.booking-submit .btn{width:100%}
+/* sections */
+section{margin-bottom:74px}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:22px}
+.section-head h2{font-size:clamp(2.3rem,8vw,3.25rem);margin:7px 0 0;letter-spacing:-.025em}
+.section-intro{color:var(--muted);font-size:.9rem;max-width:260px;margin:0}
+.services{display:grid;gap:11px}
+.service{position:relative;display:grid;grid-template-columns:54px 1fr auto;align-items:center;gap:14px;padding:15px;background:#fff;border:1px solid var(--line);border-radius:18px;text-decoration:none;transition:.25s ease}
+.service:hover{transform:translateX(4px);border-color:var(--rose)}
+.service-icon{width:54px;height:54px;border-radius:50%;background:var(--cream-2);color:var(--mauve);display:grid;place-items:center}
+.service-icon svg{width:24px;height:24px}
+.service strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:600}
+.service span{color:var(--muted);font-size:.82rem}
+.service-arrow{color:var(--mauve)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery figure{position:relative;margin:0;min-height:185px;overflow:hidden;border-radius:18px;background:linear-gradient(160deg,var(--mauve),var(--plum))}
+.gallery figure:first-child{grid-column:1/-1;min-height:330px}
+.gallery img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figure::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(42,23,48,.55),transparent 55%)}
+.gallery-info{position:absolute;z-index:3;left:15px;bottom:13px;color:#fff}
+.gallery-info strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.35rem}
+.gallery-info span{font-size:.7rem;opacity:.85;letter-spacing:.08em;text-transform:uppercase}
+.gallery-tag{position:absolute;z-index:4;top:12px;left:13px;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.92);color:var(--plum);font-size:.72rem;font-weight:700}
+.testimonial{position:relative;overflow:hidden;background:var(--plum);color:var(--cream);border-radius:28px;padding:35px 26px 30px}
+.testimonial::before{content:"\201C";position:absolute;right:15px;top:-28px;color:rgba(255,255,255,.06);font-family:"Cormorant Garamond",serif;font-size:13rem;line-height:1}
+.testimonial .stars{color:var(--gold-soft);letter-spacing:4px;font-size:.85rem}
+.testimonial blockquote{position:relative;z-index:2;font-family:"Cormorant Garamond",serif;font-size:clamp(1.9rem,7vw,2.7rem);line-height:1.15;margin:20px 0;max-width:700px}
+.t-by{position:relative;z-index:2}
+.t-by strong{display:block;font-size:.85rem}
+.t-by span{color:rgba(252,248,246,.7);font-size:.74rem}
+.location-grid{display:grid;gap:12px}
+.location-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:21px}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:12px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.hours tr:last-child td{border-bottom:0}
+.hours td:last-child{text-align:right;font-weight:700}
+.address{display:flex;gap:11px;color:var(--muted);font-size:.88rem}
+.address svg{color:var(--mauve);margin-top:3px}
+.address strong{color:var(--plum);display:block;margin-bottom:3px}
+.map{width:100%;height:220px;border:0;border-radius:15px;margin:17px 0;background:var(--blush)}
+.location-buttons{display:grid;gap:9px}
+.amenities{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}
+.amenity{display:inline-flex;align-items:center;gap:6px;padding:7px 11px;background:var(--cream-2);border-radius:999px;color:var(--muted);font-size:.74rem}
+.amenity svg{color:var(--mauve);width:15px;height:15px}
+footer.site-footer{background:var(--plum);color:var(--cream);padding:48px 0 38px}
+.site-footer .eyebrow{color:var(--gold-soft)}
+.footer-brand{font-family:"Cormorant Garamond",serif;font-size:2rem;margin-top:8px}
+.footer-sub{color:rgba(252,248,246,.7);font-size:.82rem}
+.footer-credit{margin-top:28px;padding-top:17px;border-top:1px solid rgba(255,255,255,.12);font-size:.76rem;color:rgba(252,248,246,.65)}
+.site-footer a{color:inherit}
+.sticky{position:fixed;z-index:100;left:0;right:0;bottom:0;padding:10px 20px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(252,248,246,.95);backdrop-filter:blur(15px);border-top:1px solid var(--line);box-shadow:0 -10px 28px rgba(42,23,48,.08)}
+.sticky .btn{display:flex;width:100%;max-width:520px;margin:0 auto}
+/* tablet */
+@media(min-width:640px){
+body{padding-bottom:0}
+.sticky{display:none}
+.chips{grid-template-columns:repeat(4,1fr)}
+.gallery{grid-template-columns:2fr 1fr 1fr}
+.gallery figure,.gallery figure:first-child{grid-column:auto;min-height:360px}
+.location-grid{grid-template-columns:.9fr 1.1fr}
+}
+/* desktop */
+@media(min-width:900px){
+.wrap{padding:0 32px}
+.hero{grid-template-columns:1fr .78fr;align-items:center;gap:80px;padding:65px 0 70px}
+.hero-photo{max-width:440px}
+.flower{right:4%}
+.booking{display:grid;grid-template-columns:.75fr 1.6fr;gap:34px;align-items:center;padding:35px 40px}
+.booking-submit{grid-column:2}
+section{margin-bottom:105px}
+.services{grid-template-columns:repeat(3,1fr)}
+.service{min-height:150px;grid-template-columns:54px 1fr;align-items:start}
+.service-arrow{display:none}
+.testimonial{padding:55px}
+.map{height:270px}
+}
+@media(min-width:1200px){.hero h1{font-size:5.8rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+ <a class="brand" href="#"><b>Eryna Salon</b><span>Dinoyo &middot; Malang</span></a>
+ <a class="btn ghost sm" data-wa href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+</div></header>
+
+<main class="wrap">
+
+<section class="hero">
+ <div class="hero-copy">
+  <span class="eyebrow">Hair &middot; Beauty &middot; Care</span>
+  <h1>Rambut rapi, <em>tanpa</em> tebak-tebakan.</h1>
+  <p class="hero-desc">Salon di Dinoyo, Malang. Pilih layanan yang kamu mau, kirim ke WhatsApp, lalu biarkan tim kami bantu konfirmasi jadwalmu.</p>
+  <div class="hero-rating"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span><b>4,5</b> dari 5 &middot; 125 ulasan Google</span></div>
+  <div class="hero-actions">
+   <a class="btn" href="#booking">Pilih layanan</a>
+   <a class="btn ghost" href="#lokasi">Lihat lokasi</a>
+  </div>
+ </div>
+ <div class="hero-photo">
+  <div class="hero-frame"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzHXg2Ax6FV4Y259ntO4GaHJIEkw1JGV_xDqgfW0WEbXHpHP9_hyfmn6gsex-vpKc3bqS710QDnItw8jh5sG7VTod_VXh5Q9epepsV-bg2nJS6dfiCFj_jh8FF0ornuiC3B0PnZpRwleT4BOYmozLdV4HT7abunTbHgxDbb_2O-q94FLx1fF0TTMzvIpYmBmMn6p-sCaWGpQ1knyZjUNrhvtNizgiRlsYjX1ikgeiF" alt="Penata rambut sedang mengeringkan rambut pelanggan di Eryna Salon" fetchpriority="high"></div>
+  <div class="rating-bubble" aria-hidden="true"><div><strong>4,5</strong><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+  <div class="photo-note"><strong>Eryna Salon</strong><span>2 &middot; Dinoyo, Malang</span></div>
+ </div>
+ <div class="flower" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M78 15C53 21 32 39 22 67"/><path d="M48 29c-3-13 5-22 17-24 2 12-4 21-17 24Z"/><path d="M35 47c-13-3-21 4-24 16 12 2 21-4 24-16Z"/><path d="M29 62c-2 13 6 22 18 24 2-12-5-21-18-24Z"/></svg></div>
+</section>
+
+<div class="booking" id="booking">
+ <div class="booking-head">
+  <span class="eyebrow">Menu perawatan</span>
+  <h2>Mau perawatan apa?</h2>
+  <p>Pilih satu atau lebih. Pesanannya akan tersusun otomatis di WhatsApp.</p>
+ </div>
+ <div class="chips">
+  <button type="button" class="chip" aria-pressed="false" data-s="Potong &amp; styling"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg><span>Potong &amp; styling<small>Cut &middot; Blow &middot; Style</small></span></button>
+  <button type="button" class="chip" aria-pressed="false" data-s="Pewarnaan"><svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg><span>Pewarnaan<small>Color &middot; Tone &middot; Care</small></span></button>
+  <button type="button" class="chip" aria-pressed="false" data-s="Smoothing"><svg viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg><span>Smoothing<small>Sleek &middot; Soft &middot; Easy</small></span></button>
+  <button type="button" class="chip" aria-pressed="false" data-s="Creambath"><svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg><span>Creambath<small>Relax &middot; Care &middot; Fresh</small></span></button>
+ </div>
+ <div class="booking-submit"><a class="btn" data-wa href="#" target="_blank" rel="noopener">Kirim pilihan ke WhatsApp</a></div>
+</div>
+
+<section>
+ <div class="section-head">
+  <div><span class="eyebrow">Layanan</span><h2>Layanan untuk<br>rambutmu.</h2></div>
+  <p class="section-intro">Mulai dari haircut sampai perawatan rambut untuk tampilan yang lebih terawat.</p>
+ </div>
+ <div class="services">
+  <a class="service" data-wa-text="Halo Eryna Salon, saya mau tanya info Penataan rambut" href="#" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88M14.47 14.48 20 20M8.12 8.12 12 12"/></svg></div><div><strong>Penataan rambut</strong><span>Potong, blow, dan styling sesuai bentuk wajah.</span></div><svg class="service-arrow" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></a>
+  <a class="service" data-wa-text="Halo Eryna Salon, saya mau tanya info Smoothing" href="#" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg></div><div><strong>Smoothing</strong><span>Rambut lebih lurus, lembut, dan mudah diatur.</span></div><svg class="service-arrow" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></a>
+  <a class="service" data-wa-text="Halo Eryna Salon, boleh minta daftar layanan dan harga lengkap?" href="#" target="_blank" rel="noopener"><div class="service-icon"><svg viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></div><div><strong>Layanan lainnya</strong><span>Minta daftar lengkap dan harga melalui WhatsApp.</span></div><svg class="service-arrow" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></a>
+ </div>
+</section>
+
+<section>
+ <div class="section-head"><div><span class="eyebrow">Hasil kerja</span><h2>Rambut yang<br>terasa seperti kamu.</h2></div></div>
+ <div class="gallery">
+  <figure><span class="gallery-tag">Contoh</span><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuABqkZOiAUD73kQ-mb_14H9yXVSEiGBYcoBY4jQVUqrLlGy2FDA5i5uXCbkTSTD0r2MneG8_c66aLBrXiG5-B3rv0ttBxar6kRUMCXmYxBsPD-uYtDp4nIDE9ZMZyZ3r5un6LwcDwmRYhi9zT6vUUdR9HO9DWFPmEnss6p0G-WayquvA4XFqEuML4Rpw7AC7MbCA3JYe3sjh-O7okLjD_NIIRSsW5YUp-Yes-wLJKGe" alt="Contoh hasil smoothing rambut" loading="lazy"><div class="gallery-info"><strong>Silk Smoothing</strong><span>Sleek &middot; Soft &middot; Natural</span></div></figure>
+  <figure><span class="gallery-tag">Contoh</span><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHYjJ5J5gITF7pwGGSv7lXSLtfKgCUTzeAyCvKASo4FgL_kfJjKracJBBWCl3Cch9r_TB-AFpFLleJvQZtCB3cU_g0M9eNVhgQnv9P4Uxdq80npGihsfesz1P64WFSfqbWmYFcSKdR_lDfbv-HtiT_AHHylqJg7vy2DjSOwmHrhFCPVmBanT_tAFmsnxMx7XfNyAP5UYCGKQlnUY-Q5bMqN-WDHVIQbmNcWarETHPz" alt="Contoh potongan rambut layered" loading="lazy"><div class="gallery-info"><strong>Layered Cut</strong><span>Light &middot; Fresh &middot; Modern</span></div></figure>
+  <figure><span class="gallery-tag">Contoh</span><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYx82gvQyCncjGMhwfrdiJ7vU9_-9h8O9kbf-P4mkkVXn6JACm6eEQjQdvK2247ATRc7rPIVqb1rgqo4HuYCTxKtCtVl18IeVsUuE7229rRtpC2Op-4bAIzPJWIQwv6Of_dX_Ew6o7aFnQi3h-4OeBBY-2XD_AY6QkLpANhQ4KtkvVqt84hTREN1YtMBzsxwJMum-hqQD3KU002TLbOQn1N59Kv9t3ULk-b91ckK_U" alt="Contoh warna rambut chestnut" loading="lazy"><div class="gallery-info"><strong>Chestnut Color</strong><span>Warm &middot; Rich &middot; Glossy</span></div></figure>
+ </div>
+</section>
+
+<section>
+ <div class="section-head"><div><span class="eyebrow">Kata pelanggan</span><h2>Kata mereka<br>yang sudah datang.</h2></div></div>
+ <div class="testimonial">
+  <div class="stars" aria-label="5 dari 5 bintang">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+  <blockquote>&ldquo;Pelayanan ramah, hasilnya rapi, salonnya bersih dan nyaman.&rdquo;</blockquote>
+  <div class="t-by"><strong>Nama pelanggan</strong><span>Contoh testimoni &middot; ganti dengan ulasan asli</span></div>
+ </div>
+</section>
+
+<section id="lokasi">
+ <div class="section-head"><div><span class="eyebrow">Lokasi</span><h2>Sampai jumpa<br>di Eryna.</h2></div></div>
+ <div class="location-grid">
+  <div class="location-card">
+   <table class="hours">
+    <tr><td>Senin &ndash; Jumat</td><td>08.00 &ndash; 19.00</td></tr>
+    <tr><td>Sabtu</td><td>09.00 &ndash; 19.00</td></tr>
+    <tr><td>Minggu</td><td>08.00 &ndash; 19.00</td></tr>
+   </table>
+   <div class="amenities">
+    <span class="amenity"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>Free Wi-Fi</span>
+    <span class="amenity"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>Kartu debit</span>
+    <span class="amenity"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M7 21v-4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4"/></svg>Toilet</span>
+   </div>
+  </div>
+  <div class="location-card">
+   <div class="address"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><strong>Eryna Salon 2 Dinoyo</strong>Jl. MT. Haryono No.167, Dinoyo, Lowokwaru, Kota Malang 65144</div></div>
+   <iframe class="map" title="Peta lokasi Eryna Salon 2 Dinoyo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=-7.9390094,112.607632&z=16&output=embed"></iframe>
+   <div class="location-buttons">
+    <a class="btn" data-wa href="#" target="_blank" rel="noopener">Booking via WhatsApp</a>
+    <a class="btn ghost" href="https://www.google.com/maps/dir//ERYNA+SALON+2+dinoyo/@-7.9390094,112.607632,17z" target="_blank" rel="noopener">Buka rute di Maps</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer class="site-footer"><div class="wrap">
+ <div class="eyebrow">Dinoyo &middot; Malang</div>
+ <div class="footer-brand">Eryna Salon 2 Dinoyo</div>
+ <div class="footer-sub">Hair &middot; Beauty &middot; Care</div>
+ <div class="footer-credit">Mockup contoh oleh Ryo Digital &middot; <a href="https://wa.me/6285648983077" target="_blank" rel="noopener">WhatsApp 0856 4898 3077</a> &middot; <a href="mailto:ryosaputraofficial@gmail.com">ryosaputraofficial@gmail.com</a></div>
+</div></footer>
+
+<div class="sticky"><a class="btn" data-wa href="#" target="_blank" rel="noopener">Booking via WhatsApp</a></div>
+
+<script>
+(function(){
+ var NUM="6283834782003",chips=document.querySelectorAll(".chip");
+ function wa(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
+ function update(){
+  var sel=[].filter.call(chips,function(c){return c.getAttribute("aria-pressed")==="true"}).map(function(c){return c.dataset.s});
+  var msg=sel.length?"Halo Eryna Salon, saya mau booking layanan: "+sel.join(", ")+". Apakah ada slot kosong?":"Halo Eryna Salon, saya mau konsultasi dan booking jadwal.";
+  document.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa(msg)});
+ }
+ chips.forEach(function(c){c.addEventListener("click",function(){c.setAttribute("aria-pressed",c.getAttribute("aria-pressed")==="true"?"false":"true");update()})});
+ document.querySelectorAll("[data-wa-text]").forEach(function(a){a.href=wa(a.dataset.waText)});
+ update();
+})();
+</script>
+</body>
+</html>
